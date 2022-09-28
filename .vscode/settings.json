@@ -3,5 +3,9 @@
     "activityBar.background": "#3C2153",
     "titleBar.activeBackground": "#552F74",
     "titleBar.activeForeground": "#FDFCFE"
+  },
+  // tailwind
+  "files.associations": {
+    "*.css": "postcss"
   }
 }
