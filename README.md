@@ -2,8 +2,11 @@
 
 ## Setting
 
+https://tailwindcss.com/docs/guides/nextjs
+
 * `npx create-next-app@latest --ts`
 * `yarn add -D tailwindcss postcss autoprefixer`
+* `npx tailwindcss init`
 
 ----------------------------------------------------------------
 
