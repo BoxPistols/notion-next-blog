@@ -9,6 +9,8 @@
 * `npx tailwindcss init`
 * setting config / css
 
+## Create Component
+
 ----------------------------------------------------------------
 
 ## Next.js

@@ -16,13 +16,14 @@ a {
   box-sizing: border-box;
 }
 
+/* dark mode */
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
   body {
-    color: white;
-    background: black;
+    color: ghostwhite;
+    background: #121219;
   }
 }
 
