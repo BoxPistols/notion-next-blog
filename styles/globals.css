@@ -17,6 +17,7 @@ a {
 }
 
 /* dark mode */
+/**
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -26,6 +27,7 @@ a {
     background: #121219;
   }
 }
+*/
 
 /* Tailwind */
 
