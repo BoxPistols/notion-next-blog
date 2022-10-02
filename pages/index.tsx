@@ -5,9 +5,22 @@ import Link from "next/link"
 import Card from "../components/Card"
 import Layout from "../components/Layout"
 import { siteConfig } from "../site.config"
+import { fetchPages } from "../utils/notion"
 import { sampleCards } from "../utils/sample"
 
-const Home: NextPage = () => {
+export const getStaticProps = async () => {
+  const { results } = await fetchPages()
+  return {
+    props: {
+      pages: results ? results : [],
+    },
+    revalidate: 10,
+  }
+}
+
+const Home: NextPage = ({ pages }) => {
+  console.log(pages)
+
   return (
     <Layout>
       <div className='pt-12'>
