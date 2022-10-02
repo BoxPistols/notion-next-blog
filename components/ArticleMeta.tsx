@@ -5,15 +5,18 @@ const ArticleMeta = () => {
   return (
     <>
       {/* page cover */}
-      <Image
-        className='w-full max-w-screen-lg my-4 rounded-lg aspect-video'
-        src={"/"}
-        alt=''
-        objectFit='cover'
-        width={640}
-        height={360}
-        quality={50}
-      />
+      {/* FIXME! Set Image */}
+      {undefined! && (
+        <Image
+          className='w-full max-w-screen-lg my-4 rounded-lg aspect-video'
+          src={"/"}
+          alt=''
+          objectFit='cover'
+          width={640}
+          height={360}
+          quality={50}
+        />
+      )}
 
       {/* page name */}
       <h1 className='my-8'>page name</h1>

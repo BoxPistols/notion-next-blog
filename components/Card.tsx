@@ -5,9 +5,9 @@ import { CardProps } from "../types/types"
 
 const Card = ({ page }: CardProps) => {
   return (
-    <Link href={`/`}>
+    <Link href={`/articles/${page.slug}`}>
       <a className='flex justify-center '>
-        <div className='grid content-between w-full max-w-sm my-4 overflow-hidden rounded shadow-lg md:my-0'>
+        <div className='grid content-between w-full max-w-sm my-4 overflow-hidden rounded shadow-lg md:my-0 dark:bg-gray-800'>
           {/* image */}
           <div>
             {page.cover ? (
@@ -34,9 +34,9 @@ const Card = ({ page }: CardProps) => {
           </div>
 
           {/* title & date*/}
-          <div className='px-6 pt-4 '>
+          <div className='px-6 pt-4'>
             <h2 className='mb-3 text-base font-medium '>{page.name}</h2>
-            <p className='text-xs text-gray-700'>{page.published}</p>
+            <p className='text-xs text-gray-700 dark:text-gray-500 '>{page.published}</p>
           </div>
 
           {/* tag */}
@@ -44,7 +44,7 @@ const Card = ({ page }: CardProps) => {
             {page.tags.map((tag, index) => (
               <span
                 key={index}
-                className='px-2 py-1 mb-2 mr-2 text-sm font-normal break-words bg-gray-200 rounded-lg'
+                className='px-2 py-1 mb-2 mr-2 text-sm font-normal break-words bg-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-50'
               >
                 {`#${tag}`}
               </span>
