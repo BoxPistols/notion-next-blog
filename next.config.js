@@ -4,7 +4,7 @@ const nextConfig = {
   reactStrictMode: false,
   swcMinify: true,
   images: {
-    domains: ["placeimg.com", "placekitten.com", "placehold.jp"],
+    domains: ["www.notion.so", "placeimg.com", "placekitten.com", "placehold.jp"],
   },
 }
 

@@ -6,6 +6,7 @@ export type LayoutProps = {
 }
 
 export type PageProps = {
+  properties: any
   slug: string
   name: string
   author: string
