@@ -59,6 +59,7 @@ export type PropertyType = {
 }
 
 export type PageType = {
+  content: ReactNode
   id: string
   cover: FileType | null
   // properties: Record<string, any>;
