@@ -23,7 +23,7 @@ const Card = ({ page }: CardProps) => {
           </div>
 
           {/* title & date*/}
-          <div className='px-6 pt-4 '>
+          <div className='px-6 pt-4'>
             <h2 className='mb-3 text-base font-medium '>
               {getText(page.properties.name.title)}
             </h2>
@@ -38,7 +38,7 @@ const Card = ({ page }: CardProps) => {
               (tag, index) => (
                 <span
                   key={index}
-                  className='px-2 py-1 mb-2 mr-2 text-sm font-normal break-words bg-gray-200 rounded-lg'
+                  className='px-2 py-1 mb-2 mr-2 text-sm font-normal break-words bg-gray-700 rounded-lg'
                 >
                   {`#${tag}`}
                 </span>

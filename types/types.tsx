@@ -5,6 +5,7 @@ export type LayoutProps = {
   children: ReactNode
 }
 
+// サンプルデータ
 export type PageProps = {
   properties: any
   slug: string
@@ -17,7 +18,7 @@ export type PageProps = {
 }
 
 export type CardProps = {
-  page: PageProps
+  page: PageType
 }
 export type ArticleProps = CardProps
 export type ArticleMetaProps = CardProps
